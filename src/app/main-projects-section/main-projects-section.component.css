@@ -1,3 +1,21 @@
+#projects-block {
+    padding: 0px;
+    margin: 0px;
+}
+
 #projects-block li {
     display: inline-block;
+}
+
+#project {
+    width: 33.33333%;
+    /* min-width: 300px; */
+}
+
+#project:hover {
+    filter: brightness(95%);
+}
+
+#main {
+    background-color:cadetblue;
 }

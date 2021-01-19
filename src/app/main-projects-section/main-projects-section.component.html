@@ -1,6 +1,6 @@
-<div>
-    <ul id="projects-block">
-        <li *ngFor="let section of temp" [styles.width.%]=33>
+<div id="main">
+    <ul id="projects-block" [style.min-width.px]="projectsSectionMinWidth" [style.min-height.px]="projectsSectionMinHeight">
+        <li *ngFor="let section of temp" id="project">
             <app-main-projects-block></app-main-projects-block>
         </li>
     </ul>

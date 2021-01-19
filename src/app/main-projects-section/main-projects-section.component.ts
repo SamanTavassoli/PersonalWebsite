@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class MainProjectsSectionComponent implements OnInit {
 
   temp = [1, 2, 3];
+  projectsSectionMinWidth = 1000;
+  projectsSectionMinHeight = 1000;
 
   constructor() { }
 
