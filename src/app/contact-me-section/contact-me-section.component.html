@@ -1,0 +1,24 @@
+<div #modalView class="container">
+    <div class="content mat-app-background">
+        <p>{{contactMessage}}</p>
+        <form [formGroup]="emailForm" (ngSubmit)="send">
+            <table class="formTable">
+                <tr><mat-form-field>
+                    <mat-label>email</mat-label>
+                    <input matInput formControlName="email" type="email" required>
+                </mat-form-field></tr>
+                <tr><mat-form-field>
+                    <mat-label>name</mat-label>
+                    <input matInput formControlName="name" type="text" required>
+                </mat-form-field></tr>
+                <tr class="messageCell"><mat-form-field>
+                    <mat-label>message</mat-label>
+                    <textarea matInput formControlName="message" type="text" required></textarea>
+                </mat-form-field></tr>
+                <tr><button mat-raised-button type="submit" [disabled]="!emailForm.valid">submit</button></tr>
+            </table>
+        </form>
+
+        <button mat-raised-button color="accent" (click)="close()">Close</button>
+    </div>
+</div>
