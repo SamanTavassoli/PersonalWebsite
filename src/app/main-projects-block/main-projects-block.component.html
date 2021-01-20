@@ -1,9 +1,12 @@
-<div id="block" [style.max-height.px]=[maxHeight] [style.background-image]="'url(' + properties.backgroundImageUrl + ')'">
+<div id="block">
+    <div id="background" [style.background-image]="'url(' + properties.backgroundImageUrl + ')'"></div>
     
-    <button mat-raised-button color="accent" id="title">{{properties.name}}</button>
+    <div id="content">
+        <button mat-raised-button color="primary" id="title">{{properties.name}}</button>
     
-    <mat-list id="details">
-        <mat-list-item *ngFor="let detail of properties.details">{{detail}}</mat-list-item>
-    </mat-list>
+        <mat-list id="details">
+            <mat-list-item *ngFor="let detail of properties.details">{{detail}}</mat-list-item>
+        </mat-list>
+    </div>
     
 </div>

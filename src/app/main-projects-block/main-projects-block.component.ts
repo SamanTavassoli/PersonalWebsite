@@ -10,9 +10,6 @@ export class MainProjectsBlockComponent implements OnInit {
   @Input()
   properties
 
-  // styling
-  maxHeight: number = 1000;
-
   constructor() {
   }
 

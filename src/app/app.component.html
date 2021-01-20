@@ -1,8 +1,11 @@
-<app-contact-me-section #contactMeModal></app-contact-me-section>
-<button mat-raised-button id="aboutMe" color="accent" (click)="openModal()">Contact me</button>
+<div id="container">
+    <app-contact-me-section #contactMeModal></app-contact-me-section>
+    <button mat-raised-button id="aboutMe" color="accent" (click)="openModal()">Contact me</button>
 
-<app-website-title id="title"></app-website-title>
+    <app-website-title id="title"></app-website-title>
 
-<app-main-projects-section [styles.position]="projectsSectionPosition"></app-main-projects-section>
+    <app-main-projects-section id="projectsSection" [style.top.px]="projectsSectionTop" [style.position]="projectsSectionPosition"></app-main-projects-section>
 
-<!-- <app-about-me-section></app-about-me-section> -->
+    <!-- <app-about-me-section></app-about-me-section> -->
+
+</div>
