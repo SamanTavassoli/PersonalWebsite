@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-main-projects-block',
@@ -7,24 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainProjectsBlockComponent implements OnInit {
 
-  // styling
-  maxHeight: number = 500;
-  maxWidth: number = 500;
+  @Input()
+  properties
 
-  private _projectName: String; 
-  private _projectDetails: String[];
+  // styling
+  maxHeight: number = 1000;
 
   constructor() {
-    this._projectName = "test";
-    this._projectDetails = ["first", "second", "third"];
-  }
-
-  get projectName(): String {
-    return this._projectName;
-  }
-
-  get projectDetails(): String[] {
-    return this._projectDetails;
   }
 
   ngOnInit(): void {

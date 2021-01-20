@@ -9,11 +9,12 @@
 
 #project {
     width: 33.33333%;
+    filter: brightness(85%)
     /* min-width: 300px; */
 }
 
 #project:hover {
-    filter: brightness(95%);
+    filter: brightness(100%);
 }
 
 #main {

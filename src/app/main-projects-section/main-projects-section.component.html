@@ -1,7 +1,7 @@
 <div id="main">
     <ul id="projects-block" [style.min-width.px]="projectsSectionMinWidth" [style.min-height.px]="projectsSectionMinHeight">
-        <li *ngFor="let section of temp" id="project">
-            <app-main-projects-block></app-main-projects-block>
+        <li *ngFor="let properties of projectsProperties" id="project">
+            <app-main-projects-block [properties]="properties"></app-main-projects-block>
         </li>
     </ul>
 </div>

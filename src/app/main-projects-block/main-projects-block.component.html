@@ -1,11 +1,9 @@
-<div id="block" [style.max-height.px]=[maxHeight]>
-    <button id="title" mat-raised-button color="accent">{{projectName}}</button>
-    <mat-list id="list">
-        <mat-list-item *ngFor="let detail of projectDetails">{{detail}}</mat-list-item>
+<div id="block" [style.max-height.px]=[maxHeight] [style.background-image]="'url(' + properties.backgroundImageUrl + ')'">
+    
+    <button mat-raised-button color="accent" id="title">{{properties.name}}</button>
+    
+    <mat-list id="details">
+        <mat-list-item *ngFor="let detail of properties.details">{{detail}}</mat-list-item>
     </mat-list>
-
-    <div>
-        <h2>Additional pictures</h2>
-        <img id="mini-pics" src="assets/main-project-1/screenshots/testSC.png" width="200px">
-    </div>
+    
 </div>

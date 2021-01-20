@@ -7,7 +7,6 @@ import { ContactMeSectionComponent } from './contact-me-section/contact-me-secti
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'front-end';
 
   @ViewChild("contactMeModal", {static: false}) modal: ContactMeSectionComponent
 
